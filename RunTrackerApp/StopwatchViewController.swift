@@ -18,6 +18,7 @@ class StopwatchViewController: UIViewController {
     var minutes = 0
     var hours = 0
     var timer = Timer()
+    var mrB = -5
     
     override func viewDidLoad() {
         equalOut()
