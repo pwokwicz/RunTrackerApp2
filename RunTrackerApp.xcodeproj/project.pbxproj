@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18645D81226E25C7003E97A8 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645D80226E25C7003E97A8 /* StopwatchViewController.swift */; };
+		186A42362294A66000ABA9D0 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A42352294A66000ABA9D0 /* MusicViewController.swift */; };
 		1872FAA82268DB34007B2DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872FAA72268DB34007B2DD3 /* AppDelegate.swift */; };
 		1872FAAA2268DB34007B2DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872FAA92268DB34007B2DD3 /* ViewController.swift */; };
 		1872FAAD2268DB34007B2DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872FAAB2268DB34007B2DD3 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		18645D80226E25C7003E97A8 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		186A42352294A66000ABA9D0 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		1872FAA42268DB34007B2DD3 /* RunTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1872FAA72268DB34007B2DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1872FAA92268DB34007B2DD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				C991212E226F765B00D3EF65 /* MapViewController.swift */,
 				C900750D2291CD3300FFA20D /* DetailsViewController.swift */,
 				18645D80226E25C7003E97A8 /* StopwatchViewController.swift */,
+				186A42352294A66000ABA9D0 /* MusicViewController.swift */,
 				1872FAAB2268DB34007B2DD3 /* Main.storyboard */,
 				1872FAAE2268DB35007B2DD3 /* Assets.xcassets */,
 				1872FAB02268DB35007B2DD3 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186A42362294A66000ABA9D0 /* MusicViewController.swift in Sources */,
 				18645D81226E25C7003E97A8 /* StopwatchViewController.swift in Sources */,
 				1872FAAA2268DB34007B2DD3 /* ViewController.swift in Sources */,
 				1872FAA82268DB34007B2DD3 /* AppDelegate.swift in Sources */,

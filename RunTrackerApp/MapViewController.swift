@@ -38,7 +38,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "pizza"
+        request.naturalLanguageQuery = "preserve"
         request.region = region
         let search = MKLocalSearch (request: request)
         search.start { (response, Error) in
