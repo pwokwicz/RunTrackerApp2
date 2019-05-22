@@ -32,7 +32,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9gK-Lh-QCE" kind="show" id="Joz-di-s1L"/>
+                                    <segue destination="9gK-Lh-QCE" kind="show" id="cse-aE-avY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAd-yu-lci">
@@ -66,45 +66,43 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="ABv-ot-0Ct">
             <objects>
-                <viewController id="9gK-Lh-QCE" sceneMemberID="viewController">
+                <viewController id="9gK-Lh-QCE" customClass="MusicViewController" customModule="RunTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1j5-GS-9K1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s50-IR-err">
-                                <rect key="frame" x="31" y="229" width="312" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s50-IR-err">
+                                <rect key="frame" x="31" y="206" width="312" height="61"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
                                 <state key="normal" title="🎵 Spotify 🎵">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="spotifyButton:" destination="Kdo-Md-dbZ" eventType="touchUpInside" id="CfK-MR-73M"/>
-                                    <action selector="spotifyTapped:" destination="Kdo-Md-dbZ" eventType="touchUpInside" id="bzr-NP-ytc"/>
+                                    <action selector="spotifyTapped:" destination="9gK-Lh-QCE" eventType="touchUpInside" id="0kl-yU-mf1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDZ-3J-q5a">
-                                <rect key="frame" x="-7" y="385" width="388" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDZ-3J-q5a">
+                                <rect key="frame" x="-7" y="329" width="388" height="61"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
                                 <state key="normal" title="🎵 SoundCloud 🎵">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="soundcloudTapped:" destination="9gK-Lh-QCE" eventType="touchUpInside" id="9AX-cn-nK2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDG-LN-HYW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDG-LN-HYW">
                                 <rect key="frame" x="124" y="67" width="127" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
                                 <state key="normal" title="Music">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-D3-a6J">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-D3-a6J">
                                 <rect key="frame" x="106" y="552" width="162" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.054052203440000002" green="0.83308217009999996" blue="0.78701822700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="29"/>
                                 <state key="normal" title="Back">
@@ -112,18 +110,44 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="Lh1-Mg-Yhr" eventType="touchUpInside" id="0uT-eP-Aiw"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Zl3-i6-ULi"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Qi0-cp-Jdv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKp-Yy-yG2">
+                                <rect key="frame" x="31" y="447" width="312" height="61"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
+                                <state key="normal" title="🎵 Pandora 🎵">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pandoraTapped:" destination="9gK-Lh-QCE" eventType="touchUpInside" id="7aw-CJ-CXN"/>
+                                    <action selector="soundcloudTapped:" destination="9gK-Lh-QCE" eventType="touchUpInside" id="HGb-6S-Vf6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.054052203440000002" green="0.83308217009999996" blue="0.78701822700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XZX-D3-a6J" firstAttribute="top" secondItem="mKp-Yy-yG2" secondAttribute="bottom" constant="44" id="06Q-1h-sXZ"/>
+                            <constraint firstItem="LDZ-3J-q5a" firstAttribute="top" secondItem="s50-IR-err" secondAttribute="bottom" constant="62" id="2uR-rK-HjQ"/>
+                            <constraint firstItem="mKp-Yy-yG2" firstAttribute="centerX" secondItem="XZX-D3-a6J" secondAttribute="centerX" id="HOX-pS-ASS"/>
+                            <constraint firstItem="tDG-LN-HYW" firstAttribute="centerX" secondItem="s50-IR-err" secondAttribute="centerX" id="PEv-7k-3nK"/>
+                            <constraint firstItem="tDG-LN-HYW" firstAttribute="top" secondItem="Hkr-QV-ahj" secondAttribute="top" constant="47" id="RdU-6S-GTu"/>
+                            <constraint firstItem="s50-IR-err" firstAttribute="leading" secondItem="Hkr-QV-ahj" secondAttribute="leading" constant="31" id="SHg-bi-6tl"/>
+                            <constraint firstItem="s50-IR-err" firstAttribute="trailing" secondItem="mKp-Yy-yG2" secondAttribute="trailing" id="T0w-va-aKU"/>
+                            <constraint firstItem="mKp-Yy-yG2" firstAttribute="top" secondItem="LDZ-3J-q5a" secondAttribute="bottom" constant="57" id="TgE-Qq-r5s"/>
+                            <constraint firstItem="XZX-D3-a6J" firstAttribute="leading" secondItem="Hkr-QV-ahj" secondAttribute="leading" constant="106" id="UJV-zO-jrb"/>
+                            <constraint firstItem="LDZ-3J-q5a" firstAttribute="centerX" secondItem="mKp-Yy-yG2" secondAttribute="centerX" id="cJl-iH-30K"/>
+                            <constraint firstItem="s50-IR-err" firstAttribute="leading" secondItem="mKp-Yy-yG2" secondAttribute="leading" id="idB-gd-K9K"/>
+                            <constraint firstItem="s50-IR-err" firstAttribute="top" secondItem="tDG-LN-HYW" secondAttribute="bottom" constant="78" id="kRC-eX-lud"/>
+                            <constraint firstItem="LDZ-3J-q5a" firstAttribute="leading" secondItem="1j5-GS-9K1" secondAttribute="leadingMargin" constant="-23" id="nCr-XO-tW0"/>
+                            <constraint firstItem="s50-IR-err" firstAttribute="centerX" secondItem="1j5-GS-9K1" secondAttribute="centerX" id="neE-cs-Oot"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hkr-QV-ahj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgb-jX-wen" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Kdo-Md-dbZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-654" y="907"/>
+            <point key="canvasLocation" x="-558" y="903"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="C7N-7p-btv">
@@ -416,6 +440,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mbb-DM-UQY"/>
+        <segue reference="Qi0-cp-Jdv"/>
     </inferredMetricsTieBreakers>
 </document>
